@@ -1,0 +1,2 @@
+# jlog
+Basic JSON logger
