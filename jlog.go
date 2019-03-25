@@ -3,6 +3,7 @@ package jlog
 import (
 	"encoding/json"
 	"log"
+	"os"
 	"runtime"
 )
 
@@ -13,6 +14,7 @@ const (
 	DEBUG   = "debug"
 	TRACE   = "trace"
 	INIT    = "Init"
+	FATAL   = "fatal"
 )
 
 type Fields map[string]interface{}
@@ -45,6 +47,10 @@ func Log(msgType string, msg string, data map[string]interface{}) {
 		log.Println(err)
 	} else {
 		log.Println(string(data_json))
+	}
+
+	if msgType == FATAL {
+		os.Exit(1)
 	}
 
 }
