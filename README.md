@@ -30,10 +30,10 @@ log.Log(log.INFO, "Insert message", log.Fields{
 
 ### Levels
 
-INFO    
-ERROR   
-WARNING 
-DEBUG  
-TRACE  
-INIT   
-FATAL  
+INFO
+ERROR
+WARNING
+DEBUG
+TRACE
+INIT
+FATAL
