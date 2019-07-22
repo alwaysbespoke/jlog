@@ -2,9 +2,9 @@
 Basic JSON logger
 
 ## How to Use
----
 
-## Without Fields
+### Without Fields
+---
 
 ```golang
 import log "github.com/alwaysbespoke/jlog"
@@ -12,7 +12,8 @@ import log "github.com/alwaysbespoke/jlog"
 log.Log(log.INFO, "Insert message", nil)
 ```
 
-## With Fields
+### With Fields
+---
 
 ```golang
 import log "github.com/alwaysbespoke/jlog"
@@ -22,7 +23,8 @@ log.Log(log.INFO, "Insert message", log.Fields{
 })
 ```
 
-## Sample Output
+### Sample Output
+---
 
 ```golang
 2019/07/18 10:52:57 {"src":"C:/Users/User/go/src/project/main.go","fname":"function name","type":"level","message":"Hello world","data":{}}
@@ -30,6 +32,7 @@ log.Log(log.INFO, "Insert message", log.Fields{
 
 
 ### Levels
+---
 INFO    
 ERROR   
 WARNING 
