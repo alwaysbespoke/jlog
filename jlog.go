@@ -54,3 +54,27 @@ func Log(msgType string, msg string, data map[string]interface{}) {
 	}
 
 }
+
+func Info(msg string, data map[string]interface{}) {
+	Log(INFO, msg, data)
+}
+
+func Error(msg string, data map[string]interface{}) {
+	Log(ERROR, msg, data)
+}
+
+func Warning(msg string, data map[string]interface{}) {
+	Log(WARNING, msg, data)
+}
+
+func Debug(msg string, data map[string]interface{}) {
+	Log(DEBUG, msg, data)
+}
+
+func Trace(msg string, data map[string]interface{}) {
+	Log(TRACE, msg, data)
+}
+
+func Fatal(msg string, data map[string]interface{}) {
+	Log(FATAL, msg, data)
+}
